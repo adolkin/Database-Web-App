@@ -54,7 +54,7 @@ public class CustomerController {
 		return "redirect:/customer/list";
 	}
 	
-	@PostMapping("/showFormForUpdate")
+	@GetMapping("/showFormForUpdate")
 	public String showFormForUpdate(@RequestParam("customerId") int theId,
 									Model theModel) {
 		
